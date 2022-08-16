@@ -29,7 +29,5 @@ setup(
         'typing_extensions==4.1.1',
         'zipp==3.6.0',
         'cryptography==37.0.4'],
-    author='Gregor Liedtke',
-    author_email='your@email.com',
-    description='Your sub-project'
+    author='Gregor Liedtke'
 )
