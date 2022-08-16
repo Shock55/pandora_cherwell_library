@@ -1,0 +1,27 @@
+cherwell_connection:
+  name: "name"
+  database_system: "system"
+  host: "host"
+  database: "database"
+  user: "user"
+  passwd: "passwd"
+  views: "bool"
+  target_table:
+    policy: "table"
+    cmdb_items: "table"
+  return_table: "bool"
+  type_name: "name"
+  fqdn_name: "name"
+
+pandora_connection:
+  name: "name"
+  database_system: "name"
+  host: "host"
+  database: "database"
+  user: "user"
+  passwd: "passwd"
+  target_table: "None"
+  return_table: "bool"
+  type_name: "name"
+  fqdn_name: "name"
+  id_name: "id"
