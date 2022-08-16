@@ -94,7 +94,7 @@ class PandoraAgent(PandoraCatalyst):
                         .filter(self.policy_agents.c.id_policy == 116).all()
     
     def _load_network(self):
-        seda = self._session.query(
+        return self._session.query(
                 self.policy,
                 self.group.c.nombre.label('group'),
                 self.agent,
@@ -102,9 +102,6 @@ class PandoraAgent(PandoraCatalyst):
                         .join(self.group, self.policy.c.id_group == self.group.c.id_grupo) \
                         .join(self.agent, self.group.c.id_grupo == self.agent.c.id_grupo) \
                         .filter(self.group.c.icon == 'network').all()
-        for e in seda:
-            print(e)
-        return seda
 
 
 class CherwellItem(CherwellCatalyst):
